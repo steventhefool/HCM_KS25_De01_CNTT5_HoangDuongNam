@@ -43,8 +43,8 @@ create table order_details (
 alter table orders add column note text;
 alter table products change column hang_san_xuat nha_san_xuat varchar(50) not null;
 
-drop table order_details;
-drop table orders;
+-- drop table order_details;
+-- drop table orders;
 -- Phải xóa bảng order_details trước tại vì có ràng buộc khóa ngoại.
 
 insert into products (product_name, nha_san_xuat, price, stock) 
